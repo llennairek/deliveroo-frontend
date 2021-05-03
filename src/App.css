@@ -64,6 +64,7 @@ h3 {
 h4 {
   font-size: 18px;
   color: #2e3333;
+  font-weight: 400;
 }
 main p {
   font-size: 14px;
@@ -71,7 +72,7 @@ main p {
 }
 main {
   background-color: #f3f5f5;
-  padding: 30px 10px;
+  padding: 0 10px;
 }
 
 /*  CONTENT  */
@@ -92,8 +93,12 @@ main {
   justify-content: space-between;
 }
 
-.category {
+.category:not(:first-child) {
   margin-top: 45px;
+}
+
+.category:first-child {
+  margin-top: 30px;
 }
 
 .dish {
@@ -105,10 +110,19 @@ main {
   padding: 15px;
   background-color: #fff;
   margin-bottom: 15px;
+  cursor: pointer;
+  transition: box-shadow 0.4s;
+}
+
+.dish:hover {
+  box-shadow: 0 22px 24px 0 rgb(46 51 51 / 7%);
 }
 
 .dish-description {
   flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .dish-description p {
@@ -129,6 +143,24 @@ main {
   object-fit: cover;
 }
 
+.dish span {
+  color: #868a8a;
+}
+
+.popular {
+  margin-left: 10px;
+  color: #ff8000 !important;
+  font-weight: 800;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
 /*  ASIDE  */
 
 aside {
@@ -139,27 +171,28 @@ aside {
 
 aside > div {
   position: sticky;
-  top: 0;
+  top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 150px;
-  /* align-items: center; */
   padding: 10px;
   background-color: #fff;
   border-radius: 5px;
   text-align: center;
+  box-shadow: 0 22px 24px 0 rgb(46 51 51 / 7%);
+  margin-top: 30px;
 }
 
 .validate {
   background-color: #bac3c3;
   color: #93a2a2;
-  padding: 15px;
+  padding: 26px;
   border: none;
   border-radius: 5px;
   font-weight: 700;
 }
 
 aside p {
-  padding: 20px;
+  padding: 53px;
 }
