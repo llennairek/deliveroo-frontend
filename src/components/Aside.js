@@ -4,7 +4,9 @@ function Aside() {
   return (
     <aside>
       <div>
-        <button className="validate">Valider mon panier</button>
+        <button className="validate" disabled>
+          Valider mon panier
+        </button>
         <p>Votre panier est vide</p>
       </div>
     </aside>

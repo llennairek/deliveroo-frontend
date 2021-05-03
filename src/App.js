@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   return isLoading ? (
-    <span>Loading.....</span>
+    <span className="loading">Loading.....</span>
   ) : (
     <div className="app">
       <Header
