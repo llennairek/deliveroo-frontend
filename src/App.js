@@ -12,7 +12,6 @@ function App() {
   const fetchData = async () => {
     try {
       const response = await axios.get(url);
-      console.log(response);
       setData(response.data);
       setIsLoading(false);
     } catch (error) {
@@ -25,7 +24,7 @@ function App() {
   }, []);
 
   return isLoading ? (
-    <span className="loading">Loading.....</span>
+    <span className="loading">Loading data.....</span>
   ) : (
     <div className="app">
       <Header
