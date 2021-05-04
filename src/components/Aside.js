@@ -13,7 +13,7 @@ function Aside({ cart, setCart }) {
   console.log(cart);
 
   return (
-    <aside>
+    <aside id="aside">
       <div>
         {cart.length > 0 ? (
           <>

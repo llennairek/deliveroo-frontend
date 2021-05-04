@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Star from "../assets/img/Star";
 
 function Dish({
@@ -11,7 +11,9 @@ function Dish({
   cart,
   setCart,
 }) {
+  const [anim, setAnim] = useState(0);
   const handleClick = () => {
+    setAnim(1);
     const isPresent = cart.map((item) => item.id).indexOf(id);
     if (isPresent === -1) {
       setCart([...cart, { title, price, id, quantity: 1 }]);
@@ -22,7 +24,12 @@ function Dish({
     }
   };
   return (
-    <div className="dish" onClick={handleClick}>
+    <div
+      className="dish"
+      onClick={handleClick}
+      anim={anim}
+      onAnimationEnd={() => setAnim(0)}
+    >
       <div className="dish-description">
         <h4>{title}</h4>
         <p>{description}</p>

@@ -13,6 +13,27 @@
   justify-content: center;
   font-size: 48px;
 }
+#go-to-cart {
+  display: none;
+  position: fixed;
+  right: 10px;
+  bottom: 25px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: #00cdbd;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 14px;
+}
+
+#go-to-cart:hover {
+  background-color: #fff;
+  color: #00cdbd;
+}
+
 /**********/
 /* HEADER */
 /**********/
@@ -27,6 +48,7 @@ h1 {
 }
 
 .logo-container {
+  padding: 0 10px;
   height: 60px;
   display: flex;
   align-items: center;
@@ -126,6 +148,20 @@ main {
 
 .dish:hover {
   box-shadow: 0 22px 24px 0 rgb(46 51 51 / 7%);
+  border: 1px solid #00cdbd;
+}
+
+.dish[anim="1"] {
+  animation: anim 0.5s;
+}
+
+@keyframes anim {
+  25% {
+    background-color: #00cdbd;
+  }
+  100% {
+    background-color: #fff;
+  }
 }
 
 .dish-description {
@@ -280,7 +316,7 @@ aside p {
   font-size: 20px;
 }
 
-@media screen and (max-width: 975px) {
+@media screen and (max-width: 1042px) {
   header {
     text-align: center;
   }
@@ -303,7 +339,42 @@ aside p {
     height: 100%;
     object-fit: cover;
   }
+
+  .category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dish-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+  #go-to-cart {
+    display: inline-block;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dish-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .dish {
+    width: 80%;
+  }
 }

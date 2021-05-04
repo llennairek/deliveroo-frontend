@@ -33,6 +33,11 @@ function App() {
         picture={data.restaurant.picture}
       />
       <Main categories={data.categories} />
+      <a href="#aside" id="go-to-cart">
+        Go to
+        <br />
+        cart
+      </a>
     </div>
   );
 }
