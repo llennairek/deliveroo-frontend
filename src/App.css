@@ -358,6 +358,9 @@ aside p {
     display: inline-block;
   }
 
+  .aside {
+    margin-left: 0;
+  }
   .content {
     flex-direction: column-reverse;
     align-items: center;
