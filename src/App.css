@@ -143,6 +143,7 @@ main {
   background-color: #fff;
   margin-bottom: 15px;
   cursor: pointer;
+  border: 1px transparent;
   transition: box-shadow 0.4s;
 }
 
