@@ -48,7 +48,7 @@ h1 {
 }
 
 .img-container {
-  width: 35%;
+  width: 350px;
 }
 
 .restaurant-description > div:first-child {
@@ -90,6 +90,7 @@ main {
   position: relative;
   display: flex;
   justify-content: space-between;
+  padding: 10px;
 }
 
 .main-content {
@@ -277,4 +278,32 @@ aside p {
   padding: 20px 0 10px 0;
   font-weight: 600;
   font-size: 20px;
+}
+
+@media screen and (max-width: 975px) {
+  header {
+    text-align: center;
+  }
+
+  .restaurant-description {
+    flex-direction: column;
+  }
+
+  .restaurant-description > div:first-child {
+    width: 100% !important;
+  }
+
+  .img-container {
+    width: 80%;
+    height: 200px;
+    margin: 40px auto 0 auto;
+  }
+
+  .img-container > img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 600px) {
 }
