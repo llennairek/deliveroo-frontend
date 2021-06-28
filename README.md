@@ -1,68 +1,64 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🥡🍔 DELIVEROO PAGE CLONE - FRONTEND
 
-## Available Scripts
+Date : May 2021  
 
-In the project directory, you can run:
+Website - https://inspiring-northcutt-97b79e.netlify.app/
 
-### `yarn start`
+## 📝 The Project
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Deliveroo page made at Bootcamp [Le Reacteur](https://www.lereacteur.io/).  
 
-### `yarn test`
+Clone the Deliveroo page, add the cart and its functionalities.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Following screenshots in order: home page, products added to cart  
 
-### `yarn build`
+![Deliveroo Page](https://user-images.githubusercontent.com/78684032/123620579-af76c080-d80a-11eb-9a12-59e4802d9452.png)
+---
+![Deliveroo cart](https://user-images.githubusercontent.com/78684032/123620811-e77e0380-d80a-11eb-8aae-d1866d36bbdb.png)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## 📃 Tasks
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+✔️ Clone Deliveroo pagee  
+✔️ A Home page with all the products list  
+✔️ Add a cart  
+✔️ Add product to cart by clicking on a meal or on the + sign in the cart  
+✔️ Remove a product from cart  
+✔️ Calculate Total  
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🧱 Stack
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<img src="https://user-images.githubusercontent.com/78684032/122961185-719a1800-d384-11eb-906a-3854e856537b.png" width="15" height="15">   JavaScript  
+<img src="https://user-images.githubusercontent.com/78684032/122961496-bcb42b00-d384-11eb-9ed9-d28ebe488d52.png" width="15" height="15">   ReactJS  
+<img src="https://user-images.githubusercontent.com/78684032/122961852-19174a80-d385-11eb-8e49-67b7afe7e605.png" width="15" height="15">   HTML5   
+<img src="https://user-images.githubusercontent.com/78684032/122962917-24b74100-d386-11eb-8936-c97fde244ee8.jpg" width="15" height="15">   CSS3  
+<img src="https://user-images.githubusercontent.com/78684032/122963272-6811af80-d386-11eb-894b-0b32fff324bf.png" width="15" height="15">   Netlify  
 
-## Learn More
+## 📦 Packages
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+react-router-dom  
+axios  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 💻 Installation and usage
 
-### Code Splitting
+Be sure, you have installed all dependencies to run the project.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### 🎬 Running the project
 
-### Analyzing the Bundle Size
+1️. Clone this repository
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+`git clone https://github.com/llennairek/deliveroo-frontend`
 
-### Making a Progressive Web App
+`cd deliveroo-frontend`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+2️. Install packages
 
-### Advanced Configuration
+`yarn`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+3️. When installation is complete:
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+`yarn start`
